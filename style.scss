@@ -12,6 +12,10 @@ body {
     color: $c-text;
 }
 
+h1, h2 {
+    font-family: Paytone One, sans-serif;
+}
+
 // Button
 .button {
     color: $c-text;
@@ -125,8 +129,49 @@ body {
         text-align: center;
         background-color: white;
         border-radius: 20px;
-        padding: 10px;
+        padding: 30px;
     }
+}
+
+.introduction {
+    line-height: 2;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .review__row {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 40px;
+    
+        .review__row--vert {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .review__row--vert img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .review__row--vert:nth-child(2) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    .review__horiz {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .review__description {
+        padding: 20px;
+    }
+
 }
 
 
