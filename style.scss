@@ -2,19 +2,72 @@ html { box-sizing: border-box; }
 *, ::before, ::after { box-sizing: inherit; }
 
 //Variables//
-$blue: #004167;
+$c-text: #004167;
 $yellow: #fed766;
-$grey: #f4f4f9;
+$background: #f4f4f9;
 
 body {
     font-family: Nunito sans, sans-serif;
     font-size: 16px;
-    color: $blue;
+    color: $c-text;
+}
+
+// Button
+.button {
+    color: $c-text;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: $yellow;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+}
+
+.button:hover {
+    color: $yellow;
+    background-color: $c-text;
 }
 
 // Header
+.header__top {
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.header__left {
+    width: 60%;  
+    display: flex;
+    align-items: center;
 
+    .header__title {
+        width: 700px;
+        height: auto;
+      }
+      
+      .header__logo {
+        width: 200px;
+        height: auto;
+      }
+}
+
+.header__right {
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+    .quote {
+        padding-bottom: 20px;
+        font-size: 20px;
+        font-style: italic;
+        transform: rotate(-15deg);
+        
+    }
+}
 
 // Menu
 .menu__all {
@@ -22,7 +75,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background-color: $blue;
+    background-color: $c-text;
     border-radius: 20px;
 }
 
@@ -44,7 +97,7 @@ body {
 .menu__link {
 	display: block;
 	padding: 10px;
-	font-size: 24px;
+	font-size: 20px;
 	font-weight: bold;
 	text-decoration: none;
 	color: white;
@@ -59,14 +112,33 @@ body {
     width: 100%;
 }
 
+// Content
+.content__welcome {
+    background-color: $background;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 10px;
+
+    .introduction, .review {
+        flex: 0 0 50%;
+        text-align: center;
+        background-color: white;
+        border-radius: 20px;
+        padding: 10px;
+    }
+}
+
+
+
 
 
 
 // Footer
 
 .footer {
-    color: $blue;
-    font-size: 14px;
+    color: $c-text;
+    font-size: 16px;
     font-weight: bold;
     background-color: $yellow;
     text-align: center;

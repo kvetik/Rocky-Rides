@@ -12,6 +12,57 @@ body {
   color: #004167;
 }
 
+.button {
+  color: #004167;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #fed766;
+  border-radius: 20px;
+  border: none;
+  text-align: center;
+}
+
+.button:hover {
+  color: #fed766;
+  background-color: #004167;
+}
+
+.header__top {
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__left {
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+.header__left .header__title {
+  width: 700px;
+  height: auto;
+}
+.header__left .header__logo {
+  width: 200px;
+  height: auto;
+}
+
+.header__right {
+  width: 30%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.header__right .quote {
+  padding-bottom: 20px;
+  font-size: 20px;
+  font-style: italic;
+  transform: rotate(-15deg);
+}
+
 .menu__all {
   display: flex;
   flex-direction: column;
@@ -39,7 +90,7 @@ body {
 .menu__link {
   display: block;
   padding: 10px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   text-decoration: none;
   color: white;
@@ -54,9 +105,24 @@ body {
   width: 100%;
 }
 
+.content__welcome {
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  gap: 10px;
+}
+.content__welcome .introduction, .content__welcome .review {
+  flex: 0 0 50%;
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+}
+
 .footer {
   color: #004167;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   background-color: #fed766;
   text-align: center;
