@@ -1,0 +1,31 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+//Variables//
+$blue: #004167;
+$yellow: #fed766;
+$grey: #f4f4f9;
+
+body {
+    font-family: Nunito sans, sans-serif;
+    font-size: 16px;
+    color: $blue;
+}
+
+// Menu
+
+
+
+
+
+
+
+// Footer
+
+.footer {
+    color: $blue;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: $yellow;
+    text-align: center;
+}
