@@ -16,6 +16,10 @@ h1, h2 {
   font-family: Paytone One, sans-serif;
 }
 
+ul {
+  list-style: none;
+}
+
 .button {
   color: #004167;
   font-size: 16px;
@@ -102,6 +106,7 @@ h1, h2 {
 
 .menu__link:hover {
   background-color: #fed766;
+  color: #004167;
   border-radius: 10px;
 }
 
@@ -123,8 +128,7 @@ h1, h2 {
   border-radius: 20px;
   padding: 30px;
 }
-
-.introduction {
+.content__welcome .introduction {
   line-height: 2;
 }
 
