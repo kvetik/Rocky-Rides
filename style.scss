@@ -1,6 +1,11 @@
 html { box-sizing: border-box; }
 *, ::before, ::after { box-sizing: inherit; }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 //Variables//
 $c-text: #004167;
 $yellow: #fed766;
@@ -137,7 +142,7 @@ ul {
     width: 100%;
 }
 
-// Content
+// Content - Welcome page
 .content__welcome {
     background-color: $background;
     display: flex;
@@ -221,9 +226,27 @@ ul {
             line-height: 2;
         }
     }
-
 }
 
+// Content - About and Contact page
+.content__about {
+    display: flex;
+    background-color: $background;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 10px;
+
+    .about, .contact {
+        flex: 1 1 50%;
+        text-align: center;
+        background-color: white;
+        border-radius: 20px;
+        padding: 20px;
+        margin: 10px;
+        line-height: 2;
+    }
+
+}
 
 
 
