@@ -39,6 +39,7 @@ ul {
   font-size: 16px;
   font-weight: bold;
   padding: 10px;
+  margin-top: 10px;
   background-color: #fed766;
   border-radius: 20px;
   border: none;
@@ -136,11 +137,12 @@ ul {
   gap: 10px;
 }
 .content__welcome .introduction, .content__welcome .review {
-  flex: 0 0 50%;
+  flex: 1 1 50%;
   text-align: center;
   background-color: white;
   border-radius: 20px;
-  padding: 30px;
+  padding: 20px;
+  margin: 10px;
 }
 .content__welcome .introduction {
   line-height: 2;
@@ -177,18 +179,28 @@ ul {
 }
 
 .tours__title {
+  background-color: white;
+  border-radius: 20px;
   text-align: center;
   margin-bottom: 20px;
+  padding: 10px;
 }
 
 .tours {
+  background-color: #f4f4f9;
   display: flex;
   overflow-x: auto;
 }
 .tours .tour {
   flex: 1 1 25%;
   text-align: center;
-  margin: 20px;
+  margin: 10px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+}
+.tours .tour .tour__description {
+  line-height: 2;
 }
 
 .footer {

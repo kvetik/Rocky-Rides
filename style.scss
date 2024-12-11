@@ -18,6 +18,8 @@ h1, h2, h3 {
 
 h1 {
     font-size: 36px;
+    //text-decoration: underline ;//
+    //text-underline-position: under;//
 }
 
 h2 {
@@ -40,6 +42,7 @@ ul {
     font-size: 16px;
     font-weight: bold;
     padding: 10px;
+    margin-top: 10px;
     background-color: $yellow;
     border-radius: 20px;
     border: none;
@@ -143,11 +146,12 @@ ul {
     gap: 10px;
 
     .introduction, .review {
-        flex: 0 0 50%;
+        flex: 1 1 50%;
         text-align: center;
         background-color: white;
         border-radius: 20px;
-        padding: 30px;
+        padding: 20px;
+        margin: 10px;
     }
 
     .introduction {
@@ -189,23 +193,33 @@ ul {
     .review__description {
         padding: 20px;
     }
-
 }
 
 // Tours
 .tours__title {
+        background-color: white;
+        border-radius: 20px;
         text-align: center;
         margin-bottom: 20px;
+        padding: 10px;
 }
 
 .tours {
+    background-color: $background;
     display: flex;
     overflow-x: auto;
 
     .tour {
         flex: 1 1 25%;
         text-align: center;
-        margin: 20px;
+        margin: 10px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 20px;
+
+        .tour__description {
+            line-height: 2;
+        }
     }
 
 }
