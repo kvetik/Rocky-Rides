@@ -12,8 +12,22 @@ body {
   color: #004167;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: Paytone One, sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 200;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 100;
 }
 
 ul {
@@ -160,6 +174,21 @@ ul {
 }
 .review .review__description {
   padding: 20px;
+}
+
+.tours__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tours {
+  display: flex;
+  overflow-x: auto;
+}
+.tours .tour {
+  flex: 1 1 25%;
+  text-align: center;
+  margin: 20px;
 }
 
 .footer {
