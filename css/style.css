@@ -380,4 +380,38 @@ td {
   font-weight: bold;
   background-color: #fed766;
   text-align: center;
+}
+
+@media (max-width: 640px) {
+  .header__top {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__top img {
+    max-width: 250px;
+  }
+  .header__left, .header__right {
+    width: 100%;
+    text-align: center;
+  }
+  .menu__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5px;
+  }
+  .menu__banner {
+    display: none;
+  }
+  .content__welcome, .tours, .content__booking, .content__about {
+    flex-direction: column;
+  }
+}
+@media (min-width: 641px) and (max-width: 768px) {
+  /* Tablet-specific styles */
+  h1 {
+    font-size: 30px;
+  }
+  /* ... other tablet-specific styles */
 }/*# sourceMappingURL=style.css.map */

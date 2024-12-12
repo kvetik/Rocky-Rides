@@ -8,7 +8,7 @@ html { box-sizing: border-box; }
 
 //Variables//
 $c-text: #004167;
-$yellow: #fed766;
+$c-button: #fed766;
 $background: #f4f4f9;
 
 body {
@@ -49,7 +49,7 @@ input[type="submit"] {
     font-weight: bold;
     padding: 10px;
     margin-top: 10px;
-    background-color: $yellow;
+    background-color: $c-button;
     border-radius: 20px;
     border: none;
     text-align: center;
@@ -57,7 +57,7 @@ input[type="submit"] {
   }
 
   input[type="submit"]:hover {
-    color: $yellow;
+    color: $c-button;
     background-color: $c-text;
   }
 
@@ -69,7 +69,7 @@ input[type="submit"] {
     font-weight: bold;
     padding: 10px;
     margin-top: 10px;
-    background-color: $yellow;
+    background-color: $c-button;
     border-radius: 20px;
     border: none;
     text-align: center;
@@ -77,9 +77,10 @@ input[type="submit"] {
 }
 
 .button:hover {
-    color: $yellow;
+    color: $c-button;
     background-color: $c-text;
 }
+
 
 // Header
 .header__top {
@@ -155,7 +156,7 @@ input[type="submit"] {
 }
 
 .menu__link:hover {
-	background-color: $yellow;
+	background-color: $c-button;
     color: $c-text;
     border-radius: 10px;
 }
@@ -281,7 +282,7 @@ input[type="submit"] {
         width: 90%;
         height: 200px;
         margin: 30px;
-        border: 2px solid $yellow;
+        border: 2px solid $c-button;
         border-radius: 20px;
       }
 }
@@ -336,7 +337,7 @@ input[type="tel"],
 input[type="number"] {
 	width: 400px;
 	padding: 20px;
-	border: 2px solid $yellow;
+	border: 2px solid $c-button;
 	border-radius: 20px;
     margin-bottom: 10px;
 }
@@ -388,7 +389,7 @@ td {
     font-size: 16px;
 }
 .current {
-    background-color: $yellow;
+    background-color: $c-button;
     color: $c-text;
     border-radius: 50%;
 }
@@ -398,6 +399,49 @@ td {
     color: $c-text;
     font-size: 16px;
     font-weight: bold;
-    background-color: $yellow;
+    background-color: $c-button;
     text-align: center;
 }
+
+// Mobile screen
+@media (max-width: 640px) {
+    .header__top {
+        flex-direction: column;
+        align-items: center;
+        img {
+            max-width: 250px;
+        }
+    }
+    .header__left, .header__right {
+        width: 100%;
+        text-align: center;
+    }
+  
+    .menu__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 5px;
+    }
+    .menu__banner {
+        display: none;
+    }
+    
+    .content__welcome, .tours, .content__booking, .content__about {
+        flex-direction: column;
+    }
+ 
+
+}
+
+
+
+// Tablet screen
+@media (min-width: 641px) and (max-width: 768px) {
+    /* Tablet-specific styles */
+    h1 {
+      font-size: 30px;
+    }
+    /* ... other tablet-specific styles */
+  }
