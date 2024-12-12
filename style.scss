@@ -216,7 +216,12 @@ input[type="submit"] {
     .review__horiz {
         display: flex;
         flex-direction: row;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
     }
+    
 
     .review__description {
         padding: 20px;
@@ -267,6 +272,11 @@ input[type="submit"] {
         padding: 30px;
         margin: 10px;
         line-height: 2;
+    }
+
+    .contact__photo  {
+        width: 100%;
+        height: auto;
     }
     
     .contact__detail img {
@@ -405,6 +415,12 @@ td {
 
 // Mobile screen
 @media (max-width: 640px) {
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 20px;
+    }
     .header__top {
         flex-direction: column;
         align-items: center;
@@ -416,7 +432,6 @@ td {
         width: 100%;
         text-align: center;
     }
-  
     .menu__list {
         display: flex;
         flex-direction: column;
@@ -431,11 +446,7 @@ td {
     .content__welcome, .tours, .content__booking, .content__about {
         flex-direction: column;
     }
- 
-
 }
-
-
 
 // Tablet screen
 @media (min-width: 641px) and (max-width: 768px) {

@@ -199,6 +199,10 @@ input[type=submit]:hover {
   display: flex;
   flex-direction: row;
 }
+.review .review__horiz img {
+  max-width: 100%;
+  height: auto;
+}
 .review .review__description {
   padding: 20px;
 }
@@ -243,6 +247,10 @@ input[type=submit]:hover {
   padding: 30px;
   margin: 10px;
   line-height: 2;
+}
+.content__about .contact__photo {
+  width: 100%;
+  height: auto;
 }
 .content__about .contact__detail img {
   padding: 20px;
@@ -383,6 +391,12 @@ td {
 }
 
 @media (max-width: 640px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 20px;
+  }
   .header__top {
     flex-direction: column;
     align-items: center;
