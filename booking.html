@@ -3,3 +3,74 @@ layout: hlavni-sablona.njk
 title: Booking | Rocky Rides
 ---
     <!--Booking Form-->
+    <div class="content__booking">
+        <h1>Booking Form</h1>
+            
+            <section class="form">
+            
+                <div class="form__tour">
+                    <h3>First, please select tour option</h3>
+                        <form>
+                            <label>
+                                <input type="radio" name="tour" value="Moraine Lake Tour" required>
+                                Moraine Lake Tour
+                            </label>
+                            <label>
+                                <input type="radio" name="tour" value="Lake Louise Tour" required>
+                                Lake Louise Tour
+                            </label>
+                            <label>
+                                <input type="radio" name="tour" value="Combo Tour" required>
+                                Combo Tour
+                            </label>
+                            <label>
+                                <input type="radio" name="tour" value="Moraine Lake Sunrise Tour" required>
+                                Moraine Lake Sunrise Tour
+                            </label>
+                        </form>
+    
+                    <h3>Second, please select pick-up location</h3>
+                        <form>    
+                            <label>
+                                <input type="radio" name="location" value="Canmore" required>
+                                Canmore
+                            </label>
+                            <label>
+                                <input type="radio" name="location" value="Banff" required>
+                                Banff
+                            </label>
+                    
+                            <input type="submit" value="SUBMIT">
+                        </form>
+    
+                    <h3>Third, please select date</h3>
+                
+                </div>
+    
+            </section>
+    
+        <!--Customer contact information-->
+            <section class="customer">
+                <h2>Your Contact Information</h2>
+    
+                <div class="customer__info">
+                    <form>
+                        <label for="fname">Name</label><br>
+                        <input type="text" id="fname" name="fname" placeholder="First Name">
+                        <input type="text" id="lname" name="lname" placeholder="Last Name"><br><br>
+                        <label for="email">Email</label><br>
+                        <input type="email" id="email" name="email"><br><br>
+                        <label for="phone">Phone No.</label><br>
+                        <input type="tel" id="phone" name="phone"><br><br>
+                        <label for="lguests">Number of guests</label><br>
+                        <input type="number" id="lguests" name="guests"><br><br>
+                        <input type="submit" value="SUBMIT">
+                      </form>
+                    
+            
+    
+                </div>
+    
+            </section>
+        </div>
+    

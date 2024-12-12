@@ -39,6 +39,24 @@ ul {
   list-style: none;
 }
 
+input[type=submit] {
+  color: #004167;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #fed766;
+  border-radius: 20px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  color: #fed766;
+  background-color: #004167;
+}
+
 .button {
   color: #004167;
   font-size: 16px;
@@ -49,6 +67,7 @@ ul {
   border-radius: 20px;
   border: none;
   text-align: center;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -223,6 +242,50 @@ ul {
   padding: 20px;
   margin: 10px;
   line-height: 2;
+}
+.content__about .contact__detail img {
+  padding: 20px;
+}
+.content__about .contact__message {
+  background-color: white;
+  padding: 20px;
+  margin: 0 auto;
+}
+.content__about .contact__message textarea {
+  width: 90%;
+  height: 200px;
+  margin: 30px;
+  border: 2px solid #fed766;
+  border-radius: 20px;
+}
+
+form {
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=number] {
+  width: 200px;
+  padding: 10px;
+  border: 2px solid #fed766;
+  border-radius: 20px;
+}
+
+input::-moz-placeholder {
+  color: #004167;
+  font-style: italic;
+}
+
+input::placeholder {
+  color: #004167;
+  font-style: italic;
 }
 
 .footer {
