@@ -3,33 +3,34 @@ layout: hlavni-sablona.njk
 title: Booking | Rocky Rides
 ---
     <!--Booking Form-->
+    <h1 class="booking__title">Booking Form</h1>
+
     <div class="content__booking">
-        <h1>Booking Form</h1>
             
             <section class="form">
             
                 <div class="form__tour">
-                    <h3>First, please select tour option</h3>
+                    <h2>First, please select tour option</h2>
                         <form>
                             <label>
                                 <input type="radio" name="tour" value="Moraine Lake Tour" required>
-                                Moraine Lake Tour
+                                Moraine Lake Tour - 9am
                             </label>
                             <label>
                                 <input type="radio" name="tour" value="Lake Louise Tour" required>
-                                Lake Louise Tour
+                                Lake Louise Tour - 9am
                             </label>
                             <label>
                                 <input type="radio" name="tour" value="Combo Tour" required>
-                                Combo Tour
+                                Combo Tour - 9am
                             </label>
                             <label>
                                 <input type="radio" name="tour" value="Moraine Lake Sunrise Tour" required>
-                                Moraine Lake Sunrise Tour
+                                Moraine Lake Sunrise Tour - 5am
                             </label>
                         </form>
     
-                    <h3>Second, please select pick-up location</h3>
+                    <h2>Second, please select pick-up location</h2>
                         <form>    
                             <label>
                                 <input type="radio" name="location" value="Canmore" required>
@@ -39,11 +40,83 @@ title: Booking | Rocky Rides
                                 <input type="radio" name="location" value="Banff" required>
                                 Banff
                             </label>
-                    
+                        </form>
+                        
+                    <h2>Third, please select date</h2>
+                        <div class="calendar">
+                            <div class="form__calendar">
+                                <h3>
+                                    <span>❮</span> 
+                                    June , 2024 
+                                    <span>❯</span>
+                                </h3>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Sun</th>
+                                            <th>Mon</th>
+                                            <th>Tue</th>
+                                            <th>Wed</th>
+                                            <th>Thu</th>
+                                            <th>Fri</th>
+                                            <th>Sat</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                            <td class="current">4</td>
+                                            <td>5</td>
+                                            <td>6</td>
+                                            <td>7</td>
+                                        </tr>
+                                        <tr></tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>9</td>
+                                            <td>10</td>
+                                            <td>11</td>
+                                            <td>12</td>
+                                            <td>13</td>
+                                            <td>14</td>
+                                        </tr>
+                                        <tr>
+                                            <td>15</td>
+                                            <td>16</td>
+                                            <td>17</td>
+                                            <td>18</td>
+                                            <td>19</td>
+                                            <td>20</td>
+                                            <td>21</td>
+                                        </tr>
+                                        <tr>
+                                            <td>22</td>
+                                            <td>23</td>
+                                            <td>24</td>
+                                            <td>25</td>
+                                            <td>26</td>
+                                            <td>27</td>
+                                            <td>28</td>
+                                        </tr>
+                                        <tr>
+                                            <td>29</td>
+                                            <td>30</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <form>
                             <input type="submit" value="SUBMIT">
                         </form>
-    
-                    <h3>Third, please select date</h3>
                 
                 </div>
     
@@ -54,23 +127,23 @@ title: Booking | Rocky Rides
                 <h2>Your Contact Information</h2>
     
                 <div class="customer__info">
-                    <form>
-                        <label for="fname">Name</label><br>
-                        <input type="text" id="fname" name="fname" placeholder="First Name">
-                        <input type="text" id="lname" name="lname" placeholder="Last Name"><br><br>
-                        <label for="email">Email</label><br>
-                        <input type="email" id="email" name="email"><br><br>
-                        <label for="phone">Phone No.</label><br>
-                        <input type="tel" id="phone" name="phone"><br><br>
-                        <label for="lguests">Number of guests</label><br>
-                        <input type="number" id="lguests" name="guests"><br><br>
+                    <form class="customer__info--form">
+                        <label for="fname">Name</label>
+                        <input type="text" id="fname" name="fname" placeholder="First Name"><br>
+                        <input type="text" id="lname" name="lname" placeholder="Last Name"><br>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email"><br>
+                        <label for="phone">Phone No.</label>
+                        <input type="tel" id="phone" name="phone"><br>
+                        <label for="guests">Number of guests</label>
+                        <input type="number" id="guests" name="guests"><br>
+                        <label for="notes">Notes</label>
+                        <input type="text" id="notes" name="notes"><br>
+
                         <input type="submit" value="SUBMIT">
-                      </form>
-                    
-            
-    
+                    </form>
                 </div>
     
             </section>
-        </div>
+    </div>
     

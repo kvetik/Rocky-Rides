@@ -28,6 +28,7 @@ h1 {
 h2 {
   font-size: 22px;
   font-weight: 200;
+  padding-bottom: 10px;
 }
 
 h3 {
@@ -165,7 +166,7 @@ input[type=submit]:hover {
   text-align: center;
   background-color: white;
   border-radius: 20px;
-  padding: 20px;
+  padding: 30px;
   margin: 10px;
 }
 .content__welcome .introduction {
@@ -219,7 +220,7 @@ input[type=submit]:hover {
   flex: 1 1 25%;
   text-align: center;
   margin: 10px;
-  padding: 20px;
+  padding: 30px;
   background-color: white;
   border-radius: 20px;
 }
@@ -239,7 +240,7 @@ input[type=submit]:hover {
   text-align: center;
   background-color: white;
   border-radius: 20px;
-  padding: 20px;
+  padding: 30px;
   margin: 10px;
   line-height: 2;
 }
@@ -251,7 +252,7 @@ input[type=submit]:hover {
   padding: 20px;
   margin: 0 auto;
 }
-.content__about .contact__message textarea {
+.content__about textarea {
   width: 90%;
   height: 200px;
   margin: 30px;
@@ -259,23 +260,56 @@ input[type=submit]:hover {
   border-radius: 20px;
 }
 
-form {
+.booking__title {
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.content__booking {
+  display: flex;
+  background-color: #f4f4f9;
+  justify-content: space-between;
+  padding: 10px;
+  gap: 10px;
+}
+.content__booking .form, .content__booking .customer {
+  flex: 1 1 50%;
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+  margin: 10px;
+  line-height: 2;
+}
+
+.form__tour {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.customer__info--form {
   text-align: left;
+  padding-left: 60px;
 }
 
 label {
   display: block;
-  margin-bottom: 10px;
 }
 
 input[type=text],
 input[type=email],
 input[type=tel],
 input[type=number] {
-  width: 200px;
-  padding: 10px;
+  width: 400px;
+  padding: 20px;
   border: 2px solid #fed766;
   border-radius: 20px;
+  margin-bottom: 10px;
 }
 
 input::-moz-placeholder {
@@ -286,6 +320,58 @@ input::-moz-placeholder {
 input::placeholder {
   color: #004167;
   font-style: italic;
+}
+
+h3 {
+  text-align: center;
+  color: #004167;
+  display: flex;
+  justify-content: space-around;
+}
+
+span {
+  cursor: pointer;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar {
+  color: #004167;
+  background-color: white;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  border: 2px solid #004167;
+  border-radius: 20px;
+}
+
+.calendar div {
+  text-align: center;
+}
+
+table {
+  text-align: center;
+  padding: 0 20px 20px 20px;
+}
+
+th {
+  padding: 0 10px 10px 10px;
+}
+
+td {
+  cursor: pointer;
+  font-family: Nunito sans, sans-serif;
+  font-size: 16px;
+}
+
+.current {
+  background-color: #fed766;
+  color: #004167;
+  border-radius: 50%;
 }
 
 .footer {
