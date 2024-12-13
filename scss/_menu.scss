@@ -1,0 +1,45 @@
+@use 'colors';
+
+// Menu
+.menu__all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: colors.$c-text;
+    border-radius: 20px;
+}
+
+.menu__list {
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+	display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.menu__item {
+	margin: 0;
+	padding: 0 40px;
+    flex-grow: 1;
+}
+
+.menu__link {
+	display: block;
+	padding: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+	color: colors.$c-box;
+}
+
+.menu__link:hover {
+	background-color: colors.$c-button;
+    color: colors.$c-text;
+    border-radius: 10px;
+}
+
+.menu__banner {
+    width: 100%;
+}

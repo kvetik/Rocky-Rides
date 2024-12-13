@@ -1,0 +1,38 @@
+// Header
+.header__top {
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__left {
+    width: 60%;  
+    display: flex;
+    align-items: center;
+
+    .header__title {
+        width: 700px;
+        height: auto;
+      }
+      
+      .header__logo {
+        width: 200px;
+        height: auto;
+      }
+}
+
+.header__right {
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+    .quote {
+        padding-bottom: 20px;
+        font-size: 20px;
+        font-style: italic;
+        transform: rotate(-15deg);
+    }
+}

@@ -1,0 +1,104 @@
+@use 'colors';
+@use 'base';
+@use 'input';
+@use 'button';
+@use 'header';
+@use 'menu';
+@use 'welcome';
+@use 'tours';
+@use 'booking';
+@use 'about';
+@use 'footer';
+
+// ------------------------------------------
+
+// Mobile screen
+@media (max-width: 640px) {
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    .header__top {
+        flex-direction: column;
+        align-items: center;
+        img {
+            max-width: 250px;
+        }
+    }
+    .header__left, .header__right {
+        width: 100%;
+        text-align: center;
+    }
+    .header__right .button {
+        font-size: 14px;
+    }
+    .menu__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 5px;
+    }
+    .menu__link {
+        padding: 0;
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+        color: colors.$c-box;
+    }
+    .menu__banner {
+        display: none;
+    }
+    
+    .content__welcome, .tours, .content__booking, .content__about {
+        flex-direction: column;
+    }
+}
+
+// Tablet screen
+@media (min-width: 641px) and (max-width: 1120px) {
+    h1 {
+      font-size: 28px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    .header__top {
+        flex-direction: column;
+        align-items: center;
+        img {
+            max-width: 350px;
+        }
+    }
+    .header__left, .header__right {
+        width: 100%;
+        text-align: center;
+    }
+    .header__right .button {
+        font-size: 16px;
+    }
+    .menu__list {
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 0;
+    }
+    .menu__link {
+        padding: 0;
+    }
+    .menu__banner {
+        width: 100%;
+        height: auto;
+    }
+    
+    .content__welcome, .tours, .content__booking, .content__about {
+        flex-direction: column;
+    }
+  }

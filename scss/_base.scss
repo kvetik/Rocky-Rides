@@ -1,0 +1,40 @@
+@use 'colors';
+
+// -----------------------------------------
+
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Nunito sans, sans-serif;
+    font-size: 16px;
+    color: colors.$c-text;
+}
+
+h1, h2, h3 {
+    font-family: Paytone One, sans-serif;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 200;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+ul {
+    list-style: none;
+  }

@@ -1,0 +1,29 @@
+@use 'colors';
+
+// Tours
+.tours__title {
+    background-color: colors.$c-box;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.tours {
+background-color: colors.$background;
+display: flex;
+overflow-x: auto;
+
+.tour {
+    flex: 1 1 25%;
+    text-align: center;
+    margin: 10px;
+    padding: 30px;
+    background-color: colors.$c-box;
+    border-radius: 20px;
+
+    .tour__description {
+        line-height: 2;
+    }
+}
+}
