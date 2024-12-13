@@ -21,6 +21,7 @@
     .contact__photo  {
         width: 100%;
         height: auto;
+        border-radius: 0 0 20px 20px;
     }
     
     .contact__detail img {
@@ -28,13 +29,20 @@
     }
     .contact__message {
         background-color: colors.$c-box;
-        padding: 20px;
+        padding: 40px 20px 20px 20px;
         margin: 0 auto;   
+        border-top: 1px solid colors.$c-text;
+    }
+    .contact__info .signature {
+        font-family: Paytone one, sans-serif;
+        font-size: 24px;
+        font-style: italic;
+        letter-spacing: 1px;
     }
 
     textarea {
         width: 90%;
-        height: 200px;
+        height: 300px;
         margin: 30px;
         border: 2px solid colors.$c-button;
         border-radius: 20px;

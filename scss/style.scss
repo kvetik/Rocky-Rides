@@ -34,6 +34,12 @@
         width: 100%;
         text-align: center;
     }
+    .header__right .quote {
+        padding-bottom: 20px;
+        font-size: 14px;
+        transform: none;
+    }
+
     .header__right .button {
         font-size: 14px;
     }
@@ -58,6 +64,10 @@
     .content__welcome, .tours, .content__booking, .content__about {
         flex-direction: column;
     }
+
+    .content__about textarea {
+        height: 200px;
+      }
 }
 
 // Tablet screen
@@ -81,6 +91,11 @@
     .header__left, .header__right {
         width: 100%;
         text-align: center;
+    }
+    .header__right .quote {
+        padding-bottom: 20px;
+        font-size: 16px;
+        transform: none;
     }
     .header__right .button {
         font-size: 16px;

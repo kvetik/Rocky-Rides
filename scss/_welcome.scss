@@ -19,6 +19,10 @@
 
     .introduction {
         line-height: 2;
+            .signature {
+                font-family: Paytone one, sans-serif;
+                font-style: italic;
+            }
     }
 }
 
@@ -51,10 +55,10 @@
     .review__horiz {
         display: flex;
         flex-direction: row;
-        img {
-            max-width: 100%;
-            height: auto;
-        }
+    }
+    .review__horiz img {
+        max-width: 100%;
+        height: auto;
     }
     
     .review__description {
